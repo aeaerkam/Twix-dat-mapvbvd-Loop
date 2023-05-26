@@ -32,17 +32,10 @@ imgs = cell(size(names));
 twixes=cell(size(names));
 addpath(genpath('..'))
 
-% for MID=1457:1462 
-% for MID=1610:1612  % Faulty distorted supply modulation block, pulseq TR=100
-% for MID=1383:1394
 
-%  for MID=[1383:1394]
-%  for MID=[2145:2146]  %5V 10V localizer (TSE?) New Coil 
- %  for MID=[1385 1392 1394]
-% for MID=[7:10]
-%  for MID=[2068:2125]
-%  for MID=[976:1024]  March 9  
-% cd ("dat23May\")
+ plotFig=0;  % Flag to plot all intermediate figures
+ 
+
 
 if ~exist("firstRun")
 firstRun = 1;
@@ -53,9 +46,20 @@ if firstRun
  firstRun = 0;
 end
 
+% cd ("dat23May\")   
 
 for MID = [721]
-    plotFig=0;  % Flag to plot all intermediate figures
+% for MID=1457:1462 
+% for MID=1610:1612  % Faulty distorted supply modulation block, pulseq TR=100
+% for MID=1383:1394
+
+%  for MID=[1383:1394]
+%  for MID=[2145:2146]  %5V 10V localizer New Coil 
+ %  for MID=[1385 1392 1394]
+% for MID=[7:10]
+%  for MID=[2068:2125]
+%  for MID=[976:1024]  March 9  
+
 % for MID = [721]
 %  for MID = [1024]
 
